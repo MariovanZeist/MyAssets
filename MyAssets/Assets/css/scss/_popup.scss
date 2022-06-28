@@ -1,0 +1,9 @@
+﻿.popup {
+    z-index: 1;
+    visibility: hidden;
+    position: fixed;
+}
+
+.popup.show {
+    visibility: visible;
+}

@@ -1,0 +1,7 @@
+﻿@import 'popup';
+
+//Hide focusring from nonselectable divs
+
+div[tabindex="-1"]:focus {
+    outline: none;
+}

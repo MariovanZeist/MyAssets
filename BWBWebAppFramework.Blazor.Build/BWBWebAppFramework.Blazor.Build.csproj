@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <!-- Supress the warning about the assemblies we are putting in the task folder. -->
+	    <NoWarn>NU5100</NoWarn>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <IsPackable>true</IsPackable>
+        <IsShipping>true</IsShipping>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Company>Boys Without Brains</Company>
+        <Description>A temporary helper library to compile assets</Description>
+        <RepositoryUrl>https://github.com/lvanderdonk/BWBWebAppFramework</RepositoryUrl>
+        <Version>1.0.2</Version>
+    </PropertyGroup>
+	<ItemGroup>
+		<None Update="build\**" Pack="true" PackagePath="%(Identity)" />
+		<Content Include="_._" Pack="true" PackagePath="lib\netstandard2.0\_._" />
+	</ItemGroup>
+</Project>

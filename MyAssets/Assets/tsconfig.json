@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "moduleResolution": "Node",
+    "sourceMap": true,
+    "target": "ES2019",
+    "lib": [ "ES2019", "DOM" ],
+    "strict": true,
+    "esModuleInterop": true
+  }
+}

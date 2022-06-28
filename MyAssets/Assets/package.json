@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "bwa.blazor",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:release",
+    "build:Release": "webpack --mode production",
+    "build:Debug": "webpack --mode development",
+    "publish": "npm run build:release && dotnet publish -c Release"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "remove-files-webpack-plugin": "^1.5.0",
+    "css-loader": "^6.5.1",
+    "sass-loader": "^12.4.0",
+    "sass": "^1.45.0",
+    "terser": "^5.10.0",
+    "ts-loader": "9.2.8",
+    "typescript": "4.6.3",
+    "webpack": "5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-node-externals": "3.0.0"
+  }
+}
